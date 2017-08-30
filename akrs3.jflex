@@ -40,19 +40,19 @@ class           		{ System.out.println("class"); }
 public          		{ System.out.println("public"); }
 extends         		{ System.out.println("extends"); }
 static          		{ System.out.println("static"); }
-void					{ System.out.println("void"); }
-main					{ System.out.println("main"); }
-String					{ System.out.println("String"); }
-int					    { System.out.println("int"); }
-while					{ System.out.println("while"); }
-if					    { System.out.println("if"); }
+void					         { System.out.println("void"); }
+main					         { System.out.println("main"); }
+String					       { System.out.println("String"); }
+int					          { System.out.println("int"); }
+while					        { System.out.println("while"); }
+if					           { System.out.println("if"); }
 else           			{ System.out.println("else"); }
-return					{ System.out.println("return"); }
-length					{ System.out.println("length"); }
-true					{ System.out.println("true"); }
-false					{ System.out.println("false"); }
-this					{ System.out.println("this"); }
-new					    { System.out.println("new"); }
+return					       { System.out.println("return"); }
+length					       { System.out.println("length"); }
+true					         { System.out.println("true"); }
+false					        { System.out.println("false"); }
+this					         { System.out.println("this"); }
+new					          { System.out.println("new"); }
 System.out.println		{ System.out.println("System.out.println"); }
 
  
@@ -75,12 +75,12 @@ System.out.println		{ System.out.println("System.out.println"); }
 "["             		{ System.out.println("!"); }
 "]"             		{ System.out.println("!"); }
 
-{letter}    	 	    { System.out.println("Letter" + yytext()); }
-{digits}    	 		{ System.out.println("Digits" + yytext()); }
-{identifier}     		{ System.out.println("Identify" + yytext()); }
-{listint}    		    { System.out.println("List int" + yytext()); }
-{whitespace}     		{ System.out.println(yytext()); }
-{comment} 				{}
+{letter}    	 	   { System.out.println("Letter" + yytext()); }
+{digits}    	 		  { System.out.println("Digits" + yytext()); }
+{identifier}     	{ System.out.println("Identify" + yytext()); }
+{listint}    		   { System.out.println("List int" + yytext()); }
+{whitespace}     	{ System.out.println(yytext()); }
+{comment} 				    {}
  
 %%
 
